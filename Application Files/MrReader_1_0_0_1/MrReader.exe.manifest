@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MrReader.exe" version="1.0.0.1" publicKeyToken="d4cce9261314af80" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MrReader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MrReader.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto UAC
+          Se desejar mudar o nível de Controle de Conta de Usuário do Windows, substitua o 
+          nó requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se deseja usar a Virtualização de Arquivos e Registro para compatibilidade 
+         com versões anteriores, exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MrReader.exe" size="7080">
+      <assemblyIdentity name="MrReader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qFMjz5AyFsPAejpbU86Jqc3Pbun+5LbeOi0VWoNi9Sk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MrReader.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MRISO\Marcos" issuerKeyHash="2bf937b0a24788a157f6abd5ac7583b5cddbc820" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>jJqBbrKUwhl1ScEXQxRhxMx5SnHgsklgHD6IXNIBbrY=</DigestValue></Reference></SignedInfo><SignatureValue>axSzaDZ34tNzf+y836XbaU8uHtufwObrxAN44AbVhsquWQbysP3d43hAEcEYVWkMWlyipbdz96Vn/+KUDezRF0rhVU7WsMwuCenxsCf9bA1dhpGxlddF/XAjGcF/zEGe1QKnEBSs3+vzJGbQIj5C3XcqM//bQ7HzPNyleuDvK9o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>j/1MifpoRaxn7mJ3kmIsd6mvRc4My/vD/wYh/VM4eSS4SEbrQtfOnEXTk7gBEakX/kcS9VGgZjRYUuPah8leQoWR0vG5TBuQMLS9bqMJaTXacXPqbSgalibSHPBMYwgHzvWN6suWpNnyAMSXVwrKVrTuxoIZ/Tvyea5yKX0I1Zc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b66e01d25c883e1c6049b2e0714a79ccc461144317c1497519c294b26e819a8c" Description="" Url=""><as:assemblyIdentity name="MrReader.exe" version="1.0.0.1" publicKeyToken="d4cce9261314af80" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MRISO\Marcos</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+b/jSR0pEEiZezRgJAfqSnwo7MEMUYcHhmihg0lgBNI=</DigestValue></Reference></SignedInfo><SignatureValue>OxT7pyGEyn0Py1BSz8isy6LduZF9tha+EULNKwoYbueibSkg/5W+TOh13cq0bcO1Hq04zsUOybmSIoppLoOzi3l06Kv2BTBgp/aMWx94yv3uTEEPOHK6Fn1VSUDRJqtAFhoQ9H9SYFkgMcqU8j17EhWDbl+otRiozwm1eGAmOto=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>j/1MifpoRaxn7mJ3kmIsd6mvRc4My/vD/wYh/VM4eSS4SEbrQtfOnEXTk7gBEakX/kcS9VGgZjRYUuPah8leQoWR0vG5TBuQMLS9bqMJaTXacXPqbSgalibSHPBMYwgHzvWN6suWpNnyAMSXVwrKVrTuxoIZ/Tvyea5yKX0I1Zc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQIsKruOdlyZJNL9R9vcogwzANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgATQBSAEkAUwBPAFwATQBhAHIAYwBvAHMwHhcNMTcwODEyMDM0NzM4WhcNMTgwODEyMDk0NzM4WjAjMSEwHwYDVQQDHhgATQBSAEkAUwBPAFwATQBhAHIAYwBvAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAI/9TIn6aEWsZ+5id5JiLHepr0XODMv7w/8GIf1TOHkkuEhG60LXzpxF05O4ARGpF/5HEvVRoGY0WFLj2ofJXkKFkdLxuUwbkDC0vW6jCWk12nFz6m0oGpYm0hzwTGMIB871jerLlqTZ8gDEl1cKyla07saCGf078nmucil9CNWXAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAVFdWjTyzyG43VLJqI8tQWYKfAPH0gEGTPKQ/vvIOO+cIkmqGO0xi39MUnIc8ZlMZ77cXdLWTDB/pIR7Nt8gnGivHBJw2A1Nfu90ptSMQlrGulo4ti19FJZDByv9t8L5ap7uEvHHmhb9CYykL7qWWpYBSWTmWb2lz4n1W2W7nVZ0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
